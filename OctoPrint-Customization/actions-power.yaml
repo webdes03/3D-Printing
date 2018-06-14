@@ -1,0 +1,9 @@
+system:
+  actions:
+    - name: Enable Printer Power
+    command: /usr/local/etc/OctoPrint/scripts/mfictrl -l {outlet-ip} ON
+    action: powerenable
+    - name: Disable Printer Power
+    command: /usr/local/etc/OctoPrint/scripts/mfictrl -l {outlet-ip} OFF
+    action: powerdisable
+    confirm: You are about to disable printer power
